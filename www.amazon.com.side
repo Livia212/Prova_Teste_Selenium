@@ -1,0 +1,62 @@
+{
+  "id": "19f45eb4-997d-493d-9be0-9585834274dc",
+  "version": "2.0",
+  "name": "https://www.amazon.com",
+  "url": "https://www.amazon.com",
+  "tests": [{
+    "id": "496ceef4-8feb-4f8f-8af7-f3f96b296085",
+    "name": "https://exemple.com",
+    "commands": [{
+      "id": "f89a34c4-0418-4557-9e4c-5fd472426c52",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8b95032-8faa-4cad-b8a8-c7507f187848",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x846",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "929a8e6d-f733-48a9-84aa-f50c36f29d97",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Today's Deals",
+      "targets": [
+        ["linkText=Today's Deals", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='nav-xshop']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/goldbox?ref_=nav_cs_gb')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecc39865-bd8e-4f39-b1da-a86b0a247f3b",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Amazon | Deals",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b33d0724-9cd1-4574-888f-73e9ad32f9c1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a2780b09-1e0b-4e2a-a3ef-3588cf718511",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["496ceef4-8feb-4f8f-8af7-f3f96b296085"]
+  }],
+  "urls": ["https://ww38.exemple.com/", "https://www.amazon.com/"],
+  "plugins": []
+}
